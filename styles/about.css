@@ -1,0 +1,28 @@
+/* filename: about.css
+
+author: Sean Cummings
+
+created: 09/09/2025
+
+last modified: 09/09/2025
+
+description: css applies to the about page. */
+
+table, th, td {
+    border: 0.1em solid #775253;
+    border-radius: 0.2em;
+    text-align: center;
+}
+
+caption {
+    text-decoration:underline
+}
+
+#about-us {
+    text-decoration: underline;
+}
+
+th, #name, caption {
+    font-size: larger;
+
+}
