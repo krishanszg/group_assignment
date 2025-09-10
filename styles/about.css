@@ -20,9 +20,32 @@ caption {
 
 #about-us {
     text-decoration: underline;
+    font-size: 250%;
 }
 
 th, #name, caption {
     font-size: larger;
 
+}
+
+#members {
+    margin: auto;
+    padding-left: 2.5%;
+}
+
+table, #photo {
+    clear: right;
+    
+}
+
+#about-us{
+    padding-left: 4rem;
+}
+
+#we-are-jarvisscript{
+    padding-left: 4rem;
+}
+
+footer{
+    clear: both;
 }

@@ -60,7 +60,7 @@ header h1{
 
 .header-menu-item {
     /* button size and position */
-    margin-left: 1rem;  /* the distance between the link buttons */
+    margin-left: .8rem;  /* the distance between the link buttons */
     display: inline-block; /* makes it that they appear horizontal to each other */
     width:  clamp(3.5rem, 7vw, 10rem);    /* the width of the link buttons */
     padding: 0.5rem;   /* the general size of the link buttons */
@@ -87,4 +87,8 @@ header h1{
 footer{
     padding-left: 2rem;
     color:#775253;
+}
+
+#epstein-link {
+    text-decoration: none;
 }
