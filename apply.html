@@ -1,29 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="description" content="Job site for Epstein Island Security"/>
-    <meta name="keywords" content="Cybersecurity, apply, jobs, recruiting"/>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Apply for a job at Epstein Island Cybersecurity"/>
+    <meta name="keywords" content="Cybersecurity, Apply, Jobs, Recruiting, Careers"/>
     <meta name="author" content="Krishan Gurdon"/>
-    <title>WIP Cybersecurity Application Site</title>
-    <link rel="stylesheet" href="styles/universal.css">
+    <title>Apply - Epstein Island Cybersecurity</title>
+    <!-- CSS Links -->
     <link rel="stylesheet" href="styles/apply.css">
+    <link rel="stylesheet" href="styles/universal.css">
 </head>
     
 <body>
+    <!-- Universal Header Section -->
+
     <header>
-    <h1>Epstein Island Cybersecurity - Recruiting</h1>
+    <h1>Epstein Island Cybersecurity</h1>
         <nav id="header-menu">
             <a href="./index.html" class="header-menu-item">Home</a> 
             <a href="./about.html" class="header-menu-item">About</a> 
             <a href="./apply.html" class="header-menu-item">Apply</a> 
             <a href="./jobs.html" class="header-menu-item">Jobs</a>
         </nav>
-        <br>
+        <br><br><br>
     </header>
 
-<main>
-</main>
+    <!-- End Universal Header -->
+    <!-- Start Main Section-->
+
+    <main>
+        <!-- Page Title -->
+        <h1>Apply to Epstein Island Cybersecurity</h1>
+        <div class="body_text">
+        <p>Use the form below to apply for a job listed on the <a href="./jobs.html">jobs</a> page. Please fill out one application per job you are applying for.</p>
+        <p>All fields marked with * are required to be able to submit an application.</p>
+        </div>
+        <!-- Applicaiton Form -->
+        <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php" id="whole_form">
+            <fieldset>
+                <legend id="form_title">Your Personal Details</legend>
+                    <!-- Name Fields -->
+                    <p>
+                        <label for="fname">First Name: </label>
+                            <input type="text" name="fname" id="fname" required="required" pattern="[A-Za-z]{1,20}">
+                    </p>
+                    <p>
+                        <label for="lname">Last Name: </label>
+                            <input type="text" name="lname" id="lname" required="required" pattern="[A-Za-z]{1,20}">
+                    </p>
+                    <p>
+                        <label for="dob"> Date of Birth: </label>
+                            <input type="date" name="dob" id="dob" required="required" max="2006-12-31">
+                    </p>
+                    <!-- Gender Fields -->
+                    <h3>Gender</h3>
+                    <p>
+                        <label for="male">Male</label>
+                            <input type="radio" name="gender" id="male" value="Male" required="required">
+                    </p>
+                    <p>
+                        <label for="female">Female</label>
+                            <input type="radio" name="gender" id="female" value="Female" required="required">
+                    </p>
+                    <p>
+                        <label for="non_binary">Non-Binary</label>
+                            <input type="radio" name="gender" id="non_binary" value="Non_Binary" required="required">
+                    </p>
+                    <p>
+                        <label for="other">Other</label>
+                            <input type="radio" name="gender" id="other" value="Other" required="required">
+                    </p>
+            </fieldset>
+            <!-- Address Fieldset -->
+            <fieldset>
+                <legend id="form_title">Your Address Details</legend>
+                    <p>
+                        <label for="street">Street Address: </label>
+                            <input type="text" name="street" id="street" required="required" pattern="[A-Za-z0-9\s]{1,40}">
+                    </p>
+                    <p>
+                        <label for="suburb">Suburb/Town: </label>
+                            <input type="text" name="suburb" id="suburb" required="required" pattern="[A-Za-z\s]{1,40}">
+                    </p>
+                    <p>
+                        <label for="state">State: </label>
+                            <select name="state" id="state" required="required">
+                                <option value="">Please Select</option>
+                                <option value="VIC">VIC</option>
+                                <option value="NSW">NSW</option>
+                                <option value="QLD">QLD</option>
+                                <option value="WA">WA</option>
+                                <option value="SA">SA</option>
+                                <option value="TAS">TAS</option>
+                                <option value="ACT">ACT</option>
+                                <option value="NT">NT</option>
+                            </select>
+                    </p>
+                    <p>
+                        <label for="postcode">Postcode: </label>
+                            <input type="text" name="postcode" id="postcode" required="required" pattern="\d{4}">
+                    </p>
+            </fieldset>
+             <!-- Contact Fieldset -->
+            <fieldset>
+                <legend id="form_title">Your Contact Details</legend>
+                    <p>
+                        <label for="email">Email Address: </label>
+                            <input type="email" name="email" id="email" required="required" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number: </label>
+                            <input type="tel" name="phone" id="phone" required="required" pattern="\d{8,12}">
+                    </p>
+            </fieldset>
+            <!-- Skills Fieldset -->
+             <fieldset>
+                <legend id="form_title">Your Skills</legend>
+                    <p>Select which skills are applicable to you: </p>
+                    <!-- Skills Checkboxes -->
+                    <ul>
+                        <li>
+                            <label for="cloud">Cloud Computing Architecture (AWS, Azure)</label>
+                                <input type="checkbox" id="cloud" name="skills[]" value="cloud">
+                        </li>
+                        <li>
+                            <label for="comptia">CompTIA Certificate/s</label>
+                                <input type="checkbox" id="comptia" name="skills[]" value="comptia">
+                        </li>
+                        <li>
+                            <label for="forensics">Digital Forensics</label>
+                                <input type="checkbox" id="forensics" name="skills[]" value="forensics">
+                        </li>
+                        <li>
+                            <label for="linux">Linux</label>
+                                <input type="checkbox" id="linux" name="skills[]" value="linux">
+                        </li>
+                        <li>
+                            <label for="placeholder">Placeholder</label>
+                                <input type="checkbox" id="placeholder" name="skills[]" value="placeholder">
+                        </li>
+                        <li>
+                            <label for="other">Other Skills...</label>
+                            <br>
+                                <textarea name="other_skills" id="other_skills" rows="4" cols="40" pattern="[A-Za-z0-9\s,]{1,200}"></textarea>
+                        </li>
+                    </ul>
+            </fieldset>
+             <!-- Buttons -->
+            <input type="submit" value="Submit Application">
+            <input type="reset" value="Reset Form">
+        </form>
+    </main>
 
 <footer>
     <p>&copy; 2025 Epstein Island Cybersecurity</p>

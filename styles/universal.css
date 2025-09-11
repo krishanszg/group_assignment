@@ -14,8 +14,8 @@ description: css for all web pages in the web technology project.
 */
 
 body {background-color: #011627;
-      color: #BDC696;
-      text-shadow: 0.15rem 0.15rem 0.3rem#775253;}
+      color: #e7f1b7;
+      text-shadow: 0.15rem 0.15rem 0.3rem#222222;}
 
 html {
     font-size: 16px;/* Im using rem because it's consistent. rem means relative to root
@@ -29,6 +29,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #e7f1b7;
+    border-radius: 1rem;
+
+    position: sticky;
+    top: 0.5rem;
+    z-index: 100; /* makes sure header is always on top of other elements */
+    box-shadow: #011627 0.2rem 0.5rem 1rem;
 }
 
 header h1{
@@ -36,9 +43,10 @@ header h1{
     margin: 0;
     padding-top: 1rem;
     padding-left: 2rem;
+    padding-bottom: 1rem;
 
     /* text aesthetic */
-    color:#BDC696;
+    color:#132452;
     font-size: clamp(1.5rem, 2.5vw, 3rem);
     text-shadow: 0.15rem 0.15rem 0.3rem #775253;
     letter-spacing: 0.15rem;
@@ -52,7 +60,6 @@ header h1{
 
     /* positioning */
     padding-right: 2rem;
-    padding-top: 1rem;
 
     /* scale for different screen sizes (dont let link buttons get cut off) */
     flex-wrap: wrap;
@@ -68,12 +75,12 @@ header h1{
     /* button aesthetics */
     border: 4px solid #775253;
     background-color: #011627;
-    border-radius: 0.2rem; /* makes button rounded */
+    border-radius: 1rem; /* makes button rounded */
 
     /* text aesthetics */
     text-align: center;
     text-decoration: none;
-    color:#BDC696;
+    color:#e7f1b7;
     font-size: clamp(0.8rem, 1.5vw, 1000rem);
 
 }

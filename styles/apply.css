@@ -8,7 +8,49 @@ created: 09/09/2025
 
 last modified: 09/09/2025
 
-description: CSS styling specific to the apply page. This should not change any universal styles from the universal.css file.
+description: CSS styling specific to the apply page. This should not change much, if any, universal styles from the universal.css file.
 
 */
 
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.body_text {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    
+}
+
+#form_title {
+    text-align: center;
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#whole_form {
+    border: 2px solid #e7f1b7;
+    border-radius: 2rem;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+a {
+    /* link aesthetics */
+    text-decoration: underline;
+    color:#ffffff;
+}
+
+fieldset {
+    border: 2px solid #e7f1b7;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
