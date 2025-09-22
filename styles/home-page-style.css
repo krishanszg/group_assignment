@@ -1,0 +1,132 @@
+/*
+
+filename: universal.css
+
+author: Jude Campbell
+
+created: 09/09/2025
+
+last modified: 09/09/2025
+
+description: css for the home page of the web technology project.
+
+*/
+
+html {color: white}
+
+.image-strip{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;               /* Full width */
+    height: 350px;             /* Strip height */
+    background-size: cover;    /* Make it cover the container */
+    background-position: center; /* Center the image */
+    position: relative;        /* Needed for absolutely positioned content */
+    overflow: hidden; 
+}
+
+#welcome-banner{
+    background-image: url('../images/Little_St_James_Island_Cropped.jpg');
+}
+
+.text-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#big-text-box{
+    height: 15rem;
+    width: 50rem;
+
+    background-color:#011627ba;
+    color: #BDC696;
+}
+
+.text-box h1{
+    font-size: 6rem;
+    padding-left: 10rem;
+}
+
+#why-work-here{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#why-work-here h2{
+    text-align: center;
+    color: #BDC696;
+    font-size: 3rem;
+}
+
+.horizontal-text-boxes{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.little-text-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 9.2rem;
+    border-color:#775253;
+}
+
+.horizontal-text-boxes p{
+    border-style: dashed;
+    border-width: 3px;
+    border-color:#775253;
+    color: #BDC696;
+    font-size: 1.5rem;
+}
+
+#jobs-link-text-box{
+    width: 50%;
+    height: 3rem;
+
+    border-style: dashed;
+    border-width: 5px;
+    border-color:#BDC696;
+    border-radius: 0.3rem;
+    background-color: #BDC696;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#jobs-link{
+    color:#011627;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#jobs-link-text-box:hover{
+    border-style:dashed;
+    border-width: 5px;
+    border-color:#011627;
+}
+
+hr{
+    background-color: #775253;
+    border: none;
+    height: 2px;
+}
+
+/* #welcome-banner h2{
+    display: inline-block;
+    background-color: #0116279c;
+    width: 30rem;
+    height: 15rem;
+    text-align:center;
+    margin-left: 2rem;
+} */

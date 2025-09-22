@@ -82,7 +82,19 @@ header h1{
     color: #011627;
 }
 
-footer{
+#header-separation-bar{
+    background-color: #775253;
+    border: none;
+    height: 3px;
+}
+
+#footer-separation-bar{
+    background-color: #775253;
+    border: none;
+    height: 1px;
+}
+
+footer p{
     padding-left: 2rem;
     color:#775253;
 }

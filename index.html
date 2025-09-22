@@ -7,26 +7,60 @@
         <meta name="author" content="Jude Campbell">
         <title>WIP Cybersecurity Application Site</title>
         <link rel="stylesheet" href="styles/universal.css"> <!-- universal applies to all pages -->
-        <!-- Also create a css file specific to index.html and link it here -->
+        <link rel="stylesheet" href="styles/home-page-style.css">
     </head>
     <body>
-        <header>
-            <h1>Epstein Island Cybersecurity - Recruiting</h1>
-            <nav id="header-menu">
-                <a href="./index.html" class="header-menu-item">Home</a> 
-                <a href="./about.html" class="header-menu-item">About</a> 
-                <a href="./apply.html" class="header-menu-item">Apply</a> 
-                <a href="./jobs.html" class="header-menu-item">Jobs</a>
-            </nav>
+        <div> <!-- I crerated the div as there was a css issue with adding <hr> in header, but I wanted to have it there. -->
+            <header>
+                <h1>Epstein Island Cybersecurity - Recruiting</h1>
+                <nav id="header-menu">
+                    <a href="./index.html" class="header-menu-item">Home</a> 
+                    <a href="./about.html" class="header-menu-item">About</a> 
+                    <a href="./apply.html" class="header-menu-item">Apply</a> 
+                    <a href="./jobs.html" class="header-menu-item">Jobs</a>
+                </nav>
+            </header>
             <br>
-        </header>
+            <hr id = "header-separation-bar">
+        </div>
 
         <main>
-            <!-- your code will most likely go here -->
-            <br><br><br><br>
+
+            <div id="welcome-banner" class="image-strip">
+                <br>
+                <div class="text-box" id="big-text-box">
+                    <h1>Welcome... to the Island!</h1>
+                </div>
+            </div>
+            <div id="why-work-here">
+                <h2>Do you...</h2>
+                <div class="horizontal-text-boxes">
+                    <div class="little-text-box">
+                        <p>Have knowledge and skills regarding cybersecurity?</p>
+                    </div>
+                    <div class="little-text-box">
+                        <p>Have experience at a cybersecurity firm?</p>
+                    </div>
+                    <div class="little-text-box">
+                        <p>Want to work on an island off the coast of Puerto Rico?</p>
+                    </div>
+                    <div class="little-text-box">
+                        <p>Love contributing to an ethical and friendly environment?</p>
+                    </div>
+                </div>
+                <a href="./jobs.html" id="jobs-link-text-box">
+                    <p id="jobs-link"> If so, click here to see our jobs! </p>
+                </a>
+            </div>
+            <hr>
+            <div id="brief-about">
+
+            </div>
         </main>
 
         <footer>
+            <br>
+            <hr id="footer-separation-bar">
             <p>&copy; 2025 Epstein Island Cybersecurity</p>
         </footer>
     </body>
