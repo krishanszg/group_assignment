@@ -6,7 +6,7 @@ author: Krishan Gurdon
 
 created: 09/09/2025
 
-last modified: 09/09/2025
+last modified: 18/09/2025
 
 description: CSS styling specific to the apply page. This should not change much, if any, universal styles from the universal.css file.
 
@@ -43,7 +43,6 @@ h1 {
 }
 
 a {
-    /* link aesthetics */
     text-decoration: underline;
     color:#ffffff;
 }
@@ -53,4 +52,71 @@ fieldset {
     border-radius: 2rem;
     margin-bottom: 2rem;
     padding: 1rem;
+    width: 45%;
+}
+
+@media screen and (max-width: 1050px) {
+    fieldset {
+        width: auto;
+    }
+    
+}
+
+
+/* Form element aesthetics */
+
+label {
+    font-size: 1.25rem;
+    padding: 0.25rem;
+}
+
+input {
+    border-radius: 0.5rem;
+    background-color: #e7f1b7;
+    color: #011627;
+    padding: 0.25rem;
+    float: right;
+    width: auto
+}
+
+select {
+    border-radius: 0.5rem;
+    background-color: #e7f1b7;
+    color: #011627;
+    padding: 0.25rem;
+    float: right;
+}
+
+textarea {
+    border-radius: 0.5rem;
+    background-color: #e7f1b7;
+    color: #011627;
+    padding: 0.25rem;
+}
+
+select:focus, input:focus, textarea:focus {
+    border: #ffffff 2px solid;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+    clear: left;
+}
+
+.gender_radio {
+    font-size: 1.2rem;
+    margin-left: 1.25rem;
+}
+
+#subsection {
+    font-size: 1.5rem;
+    margin-left: 0.25rem;
+}
+
+grid {
+    display: grid;
+    width: inherit;
+}
+
+.end_button {
 }
