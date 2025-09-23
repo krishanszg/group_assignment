@@ -4,7 +4,7 @@ author: Sean Cummings
 
 created: 09/09/2025
 
-last modified: 09/09/2025
+last modified: 23/09/2025
 
 description: css applies to the about page. */
 
@@ -47,16 +47,19 @@ caption, td{
     padding: 0.5rem;
 }
 
-div {
+span {
     float: right;
     padding-right: 2.5%;
 }
 
 figure{
-    float:left;
+    float: left;
+    padding-left: 2.5%;
+}
+
+img{
     border: solid #775253;
     border-radius: 1em;
-    padding-left: 2.5%;
 }
 
 #facts {
@@ -68,4 +71,13 @@ figure{
     border: solid #775253;
     border-radius: 1em;
     padding-left: 2.5%;
+}
+
+dl{
+    padding-left: 1rem;
+    border: solid #775253;
+    border-radius: 1em;
+    width: 8.7rem;
+    text-align: left;
+    padding: 0.5rem;
 }
