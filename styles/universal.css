@@ -48,7 +48,7 @@ header h1{
     /* text aesthetic */
     color:#132452;
     font-size: clamp(1.5rem, 2.5vw, 3rem);
-    text-shadow: 0.15rem 0.15rem 0.3rem #775253;
+    text-shadow: 0.15rem 0.15rem 0.3rem #011627;
     letter-spacing: 0.15rem;
 }
 
