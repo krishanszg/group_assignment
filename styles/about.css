@@ -12,7 +12,11 @@ table, th, td {
     border: 0.1em solid #775253;
     border-radius: 0.2em;
     padding: 0.5rem;
-    text-align: center; /*all this makes the table look nice*/
+    text-align: center; 
+}
+
+table {
+    border-radius: 1em;
 }
 
 caption {
@@ -24,6 +28,7 @@ caption {
     font-size: 3rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    padding-left: 4rem;
 }
 
 th, #name{
@@ -34,21 +39,8 @@ caption{
     font-size: x-large;
 }
 
-#members {
-    padding-left: 2.5%;
-
-}
-
-figure {
-    padding-left: 2.5%;
-}
-
-#about-us{
-    padding-left: 4rem;
-}
-
 #we-are-jarvisscript{
-    padding-left: 4rem;
+    padding-left: 2rem;
 }
 
 caption, td{
@@ -61,17 +53,19 @@ div {
 }
 
 figure{
-    float:left
+    float:left;
+    border: solid #775253;
+    border-radius: 1em;
+    padding-left: 2.5%;
 }
 
 #facts {
     float:right;
-    padding-right:2.5%
-}
-
-footer {
-    clear:both
+    padding-right: 2.5%
 }
 
 #members{
-    border: 0.1em solid #775253;}
+    border: solid #775253;
+    border-radius: 1em;
+    padding-left: 2.5%;
+}
