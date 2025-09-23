@@ -33,6 +33,7 @@ description: css for jobs.html in the web technology project.
     border-radius: 1rem;
     color: #BDC696;
     grid-column: 1; /* left 1/3 */
+    padding: 10px;
 }
 
 .job {
@@ -40,6 +41,7 @@ description: css for jobs.html in the web technology project.
     border-radius: 1rem;
     color: #BDC696;
     grid-column: 2; /* right 2/3 */
+    padding: 10px;
 }
 
 .images {
@@ -96,20 +98,19 @@ summary::marker {
 summary {
     display: flex;
     justify-content: center; /* horizontally center everything inside */
-    align-items: center;     /* vertically center */
+    align-items: center; /* vertically center */
     cursor: pointer;
 }
 
 summary::before {
     content: "";
-    display: block;          /* block is better than inline-block here */
+    display: block;
     width: 150px;
     height: 150px;
-    background: url("Images/more_info.png") no-repeat center center;
+    background: url("../Images/more_info.png") no-repeat center center;
     background-size: contain;
-    margin-right: 8px;       /* optional, spacing between image and text */
+    margin-right: 8px;
 }
-
 a {
     color: #BDC696;
 }
