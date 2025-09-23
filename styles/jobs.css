@@ -107,7 +107,7 @@ summary::before {
     display: block;
     width: 150px;
     height: 150px;
-    background: url("../Images/more_info.png") no-repeat center center;
+    background: url("../Images/more_info_new.png") no-repeat center center;
     background-size: contain;
     margin-right: 8px;
 }
