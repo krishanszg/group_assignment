@@ -15,14 +15,6 @@ table, th, td {
     text-align: center; 
 }
 
-table {
-    border-radius: 1em;
-}
-
-caption {
-    text-decoration:underline
-}
-
 #about-us {
     text-align: center;
     font-size: 3rem;
@@ -37,10 +29,7 @@ th, #name{
 
 caption{
     font-size: x-large;
-}
-
-#we-are-jarvisscript{
-    padding-left: 2rem;
+    text-decoration:underline;
 }
 
 caption, td{
