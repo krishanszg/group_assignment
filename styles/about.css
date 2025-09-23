@@ -11,7 +11,8 @@ description: css applies to the about page. */
 table, th, td {
     border: 0.1em solid #775253;
     border-radius: 0.2em;
-    text-align: center;
+    padding: 0.5rem;
+    text-align: center; /*all this makes the table look nice*/
 }
 
 caption {
@@ -19,23 +20,27 @@ caption {
 }
 
 #about-us {
-    text-decoration: underline;
-    font-size: 250%;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-th, #name, caption {
+th, #name{
     font-size: larger;
+}
 
+caption{
+    font-size: x-large;
 }
 
 #members {
-    margin: auto;
     padding-left: 2.5%;
+
 }
 
-table, #photo {
-    clear: right;
-    
+figure {
+    padding-left: 2.5%;
 }
 
 #about-us{
@@ -46,6 +51,27 @@ table, #photo {
     padding-left: 4rem;
 }
 
-footer{
-    clear: both;
+caption, td{
+    padding: 0.5rem;
 }
+
+div {
+    float: right;
+    padding-right: 2.5%;
+}
+
+figure{
+    float:left
+}
+
+#facts {
+    float:right;
+    padding-right:2.5%
+}
+
+footer {
+    clear:both
+}
+
+#members{
+    border: 0.1em solid #775253;}
