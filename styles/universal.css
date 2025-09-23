@@ -111,3 +111,9 @@ footer p{
 #epstein-link {
     text-decoration: none;
 }
+
+/* hyperlink colour */
+a {
+    text-decoration: underline;
+    color:#ffffff;
+}
