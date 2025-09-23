@@ -6,12 +6,13 @@ author: Krishan Gurdon
 
 created: 09/09/2025
 
-last modified: 09/09/2025
+last modified: 23/09/2025
 
 description: CSS styling specific to the apply page. This should not change much, if any, universal styles from the universal.css file.
 
 */
 
+/* Page Header */
 h1 {
     text-align: center;
     font-size: 3rem;
@@ -19,6 +20,7 @@ h1 {
     margin-bottom: 2rem;
 }
 
+/* Below Header Page Description */
 .body_text {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -35,6 +37,7 @@ h1 {
     padding-right: 2rem;
 }
 
+/* Box Around Apply Form */
 #whole_form {
     border: 2px solid #e7f1b7;
     border-radius: 2rem;
@@ -42,15 +45,77 @@ h1 {
     padding: 2rem;
 }
 
-a {
-    /* link aesthetics */
-    text-decoration: underline;
-    color:#ffffff;
-}
-
+/* Universal Styling for Apply Fieldsets*/
 fieldset {
     border: 2px solid #e7f1b7;
     border-radius: 2rem;
     margin-bottom: 2rem;
     padding: 1rem;
+    width: 45%;
+}
+
+/* Dynamic Layout Settings */
+@media screen and (max-width: 1050px) {
+    fieldset {
+        width: auto;
+    }
+}
+
+/* Input Label Styling */
+label {
+    font-size: 1.25rem;
+    padding: 0.25rem;
+}
+
+/* Actual Input Styling */
+input {
+    border-radius: 0.5rem;
+    background-color: #e7f1b7;
+    color: #011627;
+    padding: 0.25rem;
+    float: right;
+    width: auto
+}
+
+select {
+    border-radius: 0.5rem;
+    background-color: #e7f1b7;
+    color: #011627;
+    padding: 0.25rem;
+    float: right;
+}
+
+textarea {
+    border-radius: 0.5rem;
+    background-color: #e7f1b7;
+    color: #011627;
+    padding: 0.25rem;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+    clear: left;
+}
+
+/* White border when inputting */
+select:focus, input:focus, textarea:focus {
+    border: #ffffff 2px solid;
+}
+
+/* Gender Selection Label indenting */
+.gender_radio {
+    font-size: 1.2rem;
+    margin-left: 1.25rem;
+}
+
+/* Gender Heading Styling */
+h3 {
+    font-size: 1.5rem;
+    margin-left: 0.25rem;
+}
+
+/* Submit and Reset Button Settings */
+grid {
+    display: grid;
+    width: auto;
 }
