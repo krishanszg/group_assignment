@@ -123,8 +123,9 @@ summary::before { /* ::before adds a pseudo-element allowing to style specific p
     display: block; /* make the pseudo-element act like a block level element (take up all available space) */
     width: 150px;
     height: 150px;
-    background: url("../Images/more_info.png") no-repeat center center; /* no-repeat = do not repeat image, center center = aligns image in the middle of the box*/
-    background-size: contain; /* Resize the image so it is visible within the 150x150 size*/
+    background: url("../Images/more_info_new.png") no-repeat center center;
+    background-size: contain;
+    margin-right: 8px;
 }
 a {
     color: #BDC696;
