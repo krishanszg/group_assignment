@@ -6,124 +6,167 @@ author: Krishan Gurdon
 
 created: 09/09/2025
 
-last modified: 23/09/2025
+last modified: 25/09/2025
 
 description: CSS styling specific to the apply page. This should not change much, if any, universal styles from the universal.css file.
 
 */
 
-/* Page Header */
-h1 {
-    text-align: center;
-    font-size: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
+/* LAYOUT */
+    form {              /* Form grid settings */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        justify-items: stretch;
+        align-items: stretch;
+        column-gap: 1.5rem;
+    }
+    /* Fieldset grid alignment */
+        #personal_fieldset {
+            grid-column: 1;
+            grid-row: span 2;
+            justify-self: auto;
+            align-self: auto;
+            grid-area: span 2;
+            width: auto;
 
-/* Below Header Page Description */
-.body_text {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-size: 1.25rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    
-}
+            align-content: center;
+            justify-items: center;
+        }
+        #address_fieldset {
+            grid-column: 2;
+            grid-row: 1;
+            justify-self: auto;
+            align-self: auto;
+            width: auto;
 
-#form_title {
-    text-align: center;
-    font-size: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
+            align-items: center;
+            justify-items: center;
+        }
+        #contact_fieldset {
+            grid-column: 2;
+            grid-row: 2;
+            justify-self: auto;
+            align-self: auto;
+            width: auto;
 
-/* Box Around Apply Form */
-#whole_form {
-    border: 4px solid #775253;
-    border-radius: 2rem;
-    margin: 2rem;
-    padding: 2rem;
-}
+            align-items: center;
+            justify-items: center;
+        }
+        #skills_fieldset {
+            grid-column: span 2;
+            grid-row: 3;
+            width: auto;
 
-/* Universal Styling for Apply Fieldsets*/
-fieldset {
-    border: 4px solid #775253;;
-    border-radius: 2rem;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    width: 45%;
-}
+            align-items: center;
+            justify-items: center;
+        }
+        #end_buttons {
+            grid-column: span 2;
+            grid-row: 4;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 1.5rem;
+            width: auto;
+        }
+    /* Content flex settings */
+        .input_row {
+            display: flex;
+            justify-content: right;
+            width: 375px;
+            padding: 0.35rem;
+        }
+        .input_row_gender {
+            display: flex;
+            justify-content: right;
+            width: 140px;
+            padding: 0.3rem;
+            margin-right: 80px;
+        }
 
-/* Dynamic Layout Settings */
-@media screen and (max-width: 1050px) {
-    fieldset {
+/* RESPONSIVE LAYOUT SETTINGS */
+    @media screen and (max-width: 1050px) {
+    }
+
+/* TEXT FORMATTING */
+    h1 {            /* Page Header */
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .body_text {    /* Below Header Page Description */
+        display: block;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 1.25rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        
+    }
+    #form_title {    /* Fieldset Titles */
+        text-align: center;
+        font-size: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    label {         /* Input Label Styling */
+        font-size: 1.25rem;
+        padding: 0.25rem;
+    }
+
+/* BORDER STYLING */
+    #whole_form {   /* Box Around Apply Form */
+        border: 4px solid #775253;
+        border-radius: 2rem;
+        margin: 2rem;
+        padding: 2rem;
+    }
+    fieldset {      /* Border around all fieldsets*/
+        border: 4px solid #775253;;
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        width: 45%;
+    }
+
+/* INPUT STYLING */
+    input {         /* General input box styling */
+        border-radius: 0.5rem;
+        background-color: #e7f1b7;
+        color: #011627;
+        padding: 0.25rem;
+        width: 12rem;
+        margin-left: 15px;
+    }
+    select {        /* Dropdown box styling */
+        border-radius: 0.5rem;
+        background-color: #e7f1b7;
+        color: #011627;
+        padding: 0.25rem;
+        margin-left: 15px;
+        width: 12.6rem;
+    }
+    textarea {      /* Textarea box styling */
+        border-radius: 0.5rem;
+        background-color: #e7f1b7;
+        color: #011627;
+        padding: 0.25rem;
+    }
+    select:focus, input:focus, textarea:focus { /* White border when inputting */
+        border: #ffffff 2px solid;
+    }
+    input[type="radio"] { /* Radio button scaling */
+        transform: scale(1.5);
         width: auto;
     }
-}
-
-/* Input Label Styling */
-label {
-    font-size: 1.25rem;
-    padding: 0.25rem;
-    margin-left: 20%;
-}
-
-/* Actual Input Styling */
-input {
-    border-radius: 0.5rem;
-    background-color: #e7f1b7;
-    color: #011627;
-    padding: 0.25rem;
-    float: right;
-    width: 12rem;
-    margin-right: 20%;
-}
-
-select {
-    border-radius: 0.5rem;
-    background-color: #e7f1b7;
-    color: #011627;
-    padding: 0.25rem;
-    float: right;
-    margin-right: 20%;
-}
-
-textarea {
-    border-radius: 0.5rem;
-    background-color: #e7f1b7;
-    color: #011627;
-    padding: 0.25rem;
-}
-
-input[type="radio"] {
-    transform: scale(1.5);
-    clear: left;
-}
-
-/* White border when inputting */
-select:focus, input:focus, textarea:focus {
-    border: #ffffff 2px solid;
-}
-
-/* Gender Selection Label indenting */
-.gender_radio {
-    font-size: 1.2rem;
-    margin-left: 20%;
-    width: min-content;
-}
 
 /* Gender Heading Styling */
 h3 {
     font-size: 1.5rem;
-    margin-left: 25%;
 }
 
 /* Submit and Reset Button Settings */
-grid {
-    display: grid;
-    width: auto;
-    gap: 10px;
-}
 
 .end_button {
     border: 4px solid #775253;
@@ -131,7 +174,6 @@ grid {
     font-size: 1rem;
     font-weight: bold;
     color: #011627;
-    grid-row: 1;
     width: 100%;
 }
 
@@ -141,22 +183,5 @@ grid {
     cursor: pointer;
 }
 
-/* Page Layout Formatting */
 
-#personal_fieldset {
-    float: left;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
 
-#address_fieldset {
-    float: right;
-}
-
-#contact_fieldset {
-    float: right;
-}
-
-#skills_fieldset {
-    width: 96.5%;
-}
