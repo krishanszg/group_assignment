@@ -29,61 +29,68 @@
     <!-- Start Main Section-->
 
     <main>
-        <!-- Page Title -->
+
+        <!-- Page Header -->
         <h1>Apply to Epstein Island Cybersecurity</h1>
+
+        <!-- Page Description -->
         <div class="body_text">
         <p>Use the form below to apply for a job listed on the <a href="./jobs.html">jobs</a> page. Please fill out one application per job you are applying for.</p>
         <p>All fields marked with * are optional. They are not needed to be able to submit an application.</p>
         </div>
-        <!-- Applicaiton Form -->
+
+        <!-- APPLICATION FORM -->
         <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php" id="whole_form">
+            
+            <!-- Personal Details -->
             <fieldset id="personal_fieldset">
                 <legend id="form_title">Your Personal Details</legend>
                     <!-- Name Fields -->
                     <div class="input_row">
-                        <label for="fname">First Name: </label>
-                            <input type="text" name="fname" id="fname" required="required" pattern="[A-Za-z]{1,20}">
+                        <label for="fname">First Name: </label>     <!-- First Name -->
+                            <input type="text" name="fname" id="fname" required="required" pattern="[A-Za-z]{1,20}" placeholder="Jeffrey">
                     </div>
                     <div class="input_row">
-                        <label for="lname">Last Name: </label>
-                            <input type="text" name="lname" id="lname" required="required" pattern="[A-Za-z]{1,20}">
+                        <label for="lname">Last Name: </label>      <!-- Last Name -->
+                            <input type="text" name="lname" id="lname" required="required" pattern="[A-Za-z]{1,20}" placeholder="Epstein">
                     </div>
                     <div class="input_row">
-                        <label for="dob"> Date of Birth: </label>
+                        <label for="dob"> Date of Birth: </label>   <!-- DOB -->
                             <input type="date" name="dob" id="dob" required="required" max="2006-12-31">
                     </div>
                     <!-- Gender Fields -->
                     <h2 class="subsection">Gender:</h2>
                     <div class="input_row_gender">
-                        <label for="male">Male</label>
+                        <label for="male">Male</label>              <!-- Male -->
                             <input type="radio" name="gender" id="male" value="Male" required="required">
                     </div>
                     <div class="input_row_gender"">
-                        <label for="female">Female</label>
+                        <label for="female">Female</label>          <!-- Female -->
                             <input type="radio" name="gender" id="female" value="Female" required="required">
                     </div>
                     <div class="input_row_gender">
-                        <label for="non_binary">Non-Binary</label>
+                        <label for="non_binary">Non-Binary</label>  <!-- Non-Binary -->
                             <input type="radio" name="gender" id="non_binary" value="Non_Binary" required="required">
                     </div>
                     <div class="input_row_gender">
-                        <label for="other">Other</label>
+                        <label for="other">Other</label>            <!-- Other -->
                             <input type="radio" name="gender" id="other" value="Other" required="required">
                     </div>
             </fieldset>
+
             <!-- Address Fieldset -->
             <fieldset id="address_fieldset">
                 <legend id="form_title">Your Address Details</legend>
                     <div class="input_row">
-                        <label for="street">Street Address: </label>
-                            <input type="text" name="street" id="street" required="required" pattern="[A-Za-z0-9\s]{1,40}">
+                        <label for="street">Street Address: </label>                     <!-- Address -->
+                            <input type="text" name="street" id="street" required="required" pattern="[A-Za-z0-9\s]{1,40}" placeholder="123 Street Rd">
                     </div>
                     <div class="input_row">
-                        <label for="suburb">Suburb/Town: </label>
-                            <input type="text" name="suburb" id="suburb" required="required" pattern="[A-Za-z\s]{1,40}">
+                        <label for="suburb">Suburb/Town: </label>                        <!-- Suburb -->
+                            <input type="text" name="suburb" id="suburb" required="required" pattern="[A-Za-z\s]{1,40}" placeholder="Suburb Name">
                     </div>
                     <div class="input_row">
-                        <label for="state">State: </label>
+                        <label for="state">State: </label>                               <!-- State -->
                             <select name="state" id="state" required="required">
                                 <option value="">Please Select</option>
                                 <option value="VIC">VIC</option>
@@ -97,29 +104,32 @@
                             </select>
                     </div>
                     <div class="input_row">
-                        <label for="postcode">Postcode: </label>
+                        <label for="postcode">Postcode: </label>                          <!-- Postcode -->
                             <input type="text" name="postcode" id="postcode" required="required" pattern="\d{4}" placeholder="3000">
                     </div>
             </fieldset>
+
              <!-- Contact Fieldset -->
             <fieldset id="contact_fieldset">
                 <legend id="form_title">Your Contact Details</legend>
                     <div class="input_row">
-                        <label for="email">Email Address: </label>
+                        <label for="email">Email Address: </label>          <!-- Email -->
                             <input type="email" name="email" id="email" required="required" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="youremail@email.com">
                     </div>
                     <div class="input_row">
-                        <label for="phone">Phone Number: </label>
+                        <label for="phone">Phone Number: </label>           <!-- Phone -->
                             <input type="tel" name="phone" id="phone" required="required" pattern="\d{8,12}" placeholder="0412345678">
                     </div>
             </fieldset>
+
             <!-- Skills Fieldset -->
              <fieldset id="skills_fieldset">
                 <legend id="form_title">Your Skills</legend>
                     <div class="input_row" id="jrn">
-                        <label for="job">Job Reference Number: </label>
-                            <input type="text" name="job" id="job" required="required" pattern="[A-Za-z]{1,20}">
+                        <label for="job">Job Reference Number: </label>     <!-- Job Reference Number -->
+                            <input type="text" name="job" id="job" required="required" pattern="[A-Z]{2}[0-9]{3}|[A-Z]{2}[0-9]{3}" placeholder="ABC01 / AB012">
                     </div>
+
                     <!-- Certifiacte Checkboxes -->
                     <section class="skills_column" id="certs">
                         <h3>* Certificates:</h3>
@@ -173,6 +183,8 @@
                                         <input type="checkbox" id="CEH" name="certs[]" value="CEH">
                                 </li>
                     </section>
+
+                    <!-- Experience between 1 to 2 years -->
                     <section class="skills_column" id="experience_1_2">
                         <h3>* Experience (1 to 2 years):</h3>
                             <ul>
@@ -202,7 +214,7 @@
                                 </li>
                                 <li>
                                     <label for="soft_dev">Software Development</label>
-                                        <input type="checkbox" id="Software Development" name="experience_1_2[]" value="Software Development">
+                                        <input type="checkbox" id="soft_dev" name="experience_1_2[]" value="soft_dev">
                                 </li>
                                 <li>
                                     <label for="rev_eng">Reverse Engineering (OllyDbg, IDA Pro)</label>
@@ -217,6 +229,8 @@
                                         <input type="checkbox" id="zero_trust" name="experience_1_2[]" value="zero_trust">
                                 </li>
                     </section>
+
+                    <!-- Experience 3 or more years -->
                     <section class="skills_column" id="experience_3+">
                         <h3>* Experience (3 or more years):</h3>
                             <ul>
@@ -246,7 +260,7 @@
                                 </li>
                                 <li>
                                     <label for="soft_dev">Software Development</label>
-                                        <input type="checkbox" id="Software Development" name="experience_3+[]" value="Software Development">
+                                        <input type="checkbox" id="soft_dev" name="experience_3+[]" value="soft_dev">
                                 </li>
                                 <li>
                                     <label for="rev_eng">Reverse Engineering (OllyDbg, IDA Pro)</label>
@@ -261,21 +275,21 @@
                                         <input type="checkbox" id="zero_trust" name="experience_3+[]" value="zero_trust">
                                 </li>
                     </section>
+
+                    <!-- Other skills text area -->
                     <section class="skills_column" id="other">
                         <h3>* Other Skills...</h3>
                             <textarea name="other_skills" id="other_skills" rows="6" cols="40" pattern="[A-Za-z0-9\s,]{1,200}" placeholder="Please list any applicable skills here as concisely as possible."></textarea>
                     </section>
-
-
             </fieldset>
-             <!-- Buttons -->
+
+             <!-- End Buttons -->
             <section id="end_buttons">
                 <input type="submit" value="Submit Application" class="end_button" id="submit_button">
                 <input type="reset" value="Reset Form" class="end_button" id="reset_button">
             </section>
         </form>
     </main>
-
 <footer>
     <p>&copy; 2025 Epstein Island Cybersecurity</p>
 </footer>
