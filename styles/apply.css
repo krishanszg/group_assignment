@@ -58,8 +58,8 @@ description: CSS styling specific to the apply page. This should not change much
             grid-row: 3;
             width: auto;
 
-            align-items: center;
-            justify-items: center;
+            display: grid;
+            grid-template-columns: repeat(4, auto);
         }
         #end_buttons {
             grid-column: span 2;
@@ -94,6 +94,12 @@ description: CSS styling specific to the apply page. This should not change much
         font-size: 3rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
+    }
+    h2 {            /* Gender Heading Styling */
+    font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.5rem;
     }
     .body_text {    /* Below Header Page Description */
         display: block;
@@ -160,27 +166,40 @@ description: CSS styling specific to the apply page. This should not change much
         transform: scale(1.5);
         width: auto;
     }
+    .end_button { /* Submit and Reset Button Settings */
+        border: 4px solid #775253;
+        padding: 1em;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #011627;
+        width: 100%;
+    }
+    .end_button:hover {
+        background-color: #775253;
+        color: #e7f1b7;
+        cursor: pointer;
+    }
 
-/* Gender Heading Styling */
-h3 {
-    font-size: 1.5rem;
+li {
+    list-style: none;
+    padding: 0.3rem;
 }
 
-/* Submit and Reset Button Settings */
-
-.end_button {
-    border: 4px solid #775253;
-    padding: 1em;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #011627;
-    width: 100%;
+input[type="checkbox"]{
+    float: left;
+    width: auto;
+    transform: scale(1.5);
 }
 
-.end_button:hover {
-    background-color: #775253;
-    color: #e7f1b7;
-    cursor: pointer;
+#jrn {
+    grid-row: 1;
+    grid-column: span 4;
+    width: max-content;
+    justify-self: center;
+}
+
+.skills_column {
+    grid-row: 2;
 }
 
 

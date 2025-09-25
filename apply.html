@@ -116,35 +116,157 @@
             <!-- Skills Fieldset -->
              <fieldset id="skills_fieldset">
                 <legend id="form_title">Your Skills</legend>
-                    <p>Select which skills are applicable to you: </p>
-                    <!-- Skills Checkboxes -->
-                    <ul>
-                        <li>
-                            <label for="cloud">Cloud Computing Architecture (AWS, Azure)</label>
-                                <input type="checkbox" id="cloud" name="skills[]" value="cloud">
-                        </li>
-                        <li>
-                            <label for="comptia">CompTIA Certificate/s</label>
-                                <input type="checkbox" id="comptia" name="skills[]" value="comptia">
-                        </li>
-                        <li>
-                            <label for="forensics">Digital Forensics</label>
-                                <input type="checkbox" id="forensics" name="skills[]" value="forensics">
-                        </li>
-                        <li>
-                            <label for="linux">Linux</label>
-                                <input type="checkbox" id="linux" name="skills[]" value="linux">
-                        </li>
-                        <li>
-                            <label for="placeholder">Placeholder</label>
-                                <input type="checkbox" id="placeholder" name="skills[]" value="placeholder">
-                        </li>
-                        <li>
-                            <label for="other">Other Skills...</label>
-                            <br>
-                                <textarea name="other_skills" id="other_skills" rows="4" cols="40" pattern="[A-Za-z0-9\s,]{1,200}"></textarea>
-                        </li>
-                    </ul>
+                    <div class="input_row" id="jrn">
+                        <label for="job">Job Reference Number: </label>
+                            <input type="text" name="job" id="job" required="required" pattern="[A-Za-z]{1,20}">
+                    </div>
+                    <!-- Certifiacte Checkboxes -->
+                    <section class="skills_column" id="certs">
+                        <h3>* Certificates:</h3>
+                            <ul>
+                                <li>
+                                <label for="Bachelor_CybSec">Bachelor of Cybersecurity</label>
+                                        <input type="checkbox" id="Bachelor_CybSec" name="certs[]" value="Bachelor_CybSec">
+                                </li>
+                                <li>
+                                <label for="Master_CybSec">Master of Cybersecurity</label>
+                                        <input type="checkbox" id="Master_CybSec" name="certs[]" value="Master_CybSec">
+                                </li>
+                                <li>
+                                    <label for="Bachelor_CompSci">Bachelor of Computer Science</label>
+                                        <input type="checkbox" id="Bachelor_CompSci" name="certs[]" value="Bachelor_CompSci">
+                                </li>
+                                <li>
+                                    <label for="CompTIA_CySA+">CompTIA CySA+</label>
+                                        <input type="checkbox" id="CompTIA_CySA+" name="certs[]" value="CompTIA_CySA+">
+                                </li>
+                                <li>
+                                    <label for="CompTIA_Cloud+">CompTIA Cloud+</label>
+                                        <input type="checkbox" id="CompTIA_Cloud+" name="certs[]" value="CompTIA_Cloud+">
+                                </li>
+                                <li>
+                                    <label for="CompTIA_Sec">CompTIA Security</label>
+                                        <input type="checkbox" id="CompTIA_Sec" name="certs[]" value="CompTIA_Sec">
+                                </li>
+                                <li>
+                                    <label for="CISSP">CISSP</label>
+                                        <input type="checkbox" id="CISSP" name="certs[]" value="CISSP">
+                                </li>
+                                <li>
+                                    <label for="CISM">CISM</label>
+                                        <input type="checkbox" id="CISM" name="certs[]" value="CISM">
+                                </li>
+                                <li>
+                                    <label for="GREM">GREM</label>
+                                        <input type="checkbox" id="GREM" name="certs[]" value="GREM">
+                                </li>
+                                <li>
+                                    <label for="CREST">CREST</label>
+                                        <input type="checkbox" id="CREST" name="certs[]" value="CREST">
+                                </li>
+                                <li>
+                                    <label for="OSCP">OSCP</label>
+                                        <input type="checkbox" id="OSCP" name="certs[]" value="OSCP">
+                                </li>
+                                <li>
+                                    <label for="CEH">CEH</label>
+                                        <input type="checkbox" id="CEH" name="certs[]" value="CEH">
+                                </li>
+                    </section>
+                    <section class="skills_column" id="experience_1_2">
+                        <h3>* Experience (1 to 2 years):</h3>
+                            <ul>
+                                <li>
+                                    <label for="cloud_comp">Cloud Computing (AWS and/or Azure)</label>
+                                        <input type="checkbox" id="cloud_comp" name="experience_1_2[]" value="cloud_comp">
+                                </li>
+                                <li>
+                                    <label for="info_sec">Information Security Analysis</label>
+                                        <input type="checkbox" id="info_sec" name="experience_1_2[]" value="info_sec">
+                                </li>
+                                <li>
+                                    <label for="mal_analysis">Malware Analysis</label>
+                                        <input type="checkbox" id="mal_analysis" name="experience_1_2[]" value="mal_analysis">
+                                </li>
+                                <li>
+                                    <label for="pen_test">Penetration Testing</label>
+                                        <input type="checkbox" id="pen_test" name="experience_1_2[]" value="pen_test">
+                                </li>
+                                <li>
+                                    <label for="SIEM">SIEM (Splunk, QRadar)</label>
+                                        <input type="checkbox" id="SIEM" name="experience_1_2[]" value="SIEM">
+                                </li>
+                                <li>
+                                    <label for="SOC">Security Operations Centre</label>
+                                        <input type="checkbox" id="SOC" name="experience_1_2[]" value="SOC">
+                                </li>
+                                <li>
+                                    <label for="soft_dev">Software Development</label>
+                                        <input type="checkbox" id="Software Development" name="experience_1_2[]" value="Software Development">
+                                </li>
+                                <li>
+                                    <label for="rev_eng">Reverse Engineering (OllyDbg, IDA Pro)</label>
+                                        <input type="checkbox" id="rev_eng" name="experience_1_2[]" value="rev_eng">
+                                </li>
+                                <li>
+                                    <label for="risk_manage">Risk Management</label>
+                                        <input type="checkbox" id="risk_manage" name="experience_1_2[]" value="risk_manage">
+                                </li>
+                                <li>
+                                    <label for="zero_trust">Zero-trust Architecture</label>
+                                        <input type="checkbox" id="zero_trust" name="experience_1_2[]" value="zero_trust">
+                                </li>
+                    </section>
+                    <section class="skills_column" id="experience_3+">
+                        <h3>* Experience (3 or more years):</h3>
+                            <ul>
+                                <li>
+                                    <label for="cloud_comp">Cloud Computing (AWS and/or Azure)</label>
+                                        <input type="checkbox" id="cloud_comp" name="experience_3+[]" value="cloud_comp">
+                                </li>
+                                <li>
+                                    <label for="info_sec">Information Security Analysis</label>
+                                        <input type="checkbox" id="info_sec" name="experience_3+[]" value="info_sec">
+                                </li>
+                                <li>
+                                    <label for="mal_analysis">Malware Analysis</label>
+                                        <input type="checkbox" id="mal_analysis" name="experience_3+[]" value="mal_analysis">
+                                </li>
+                                <li>
+                                    <label for="pen_test">Penetration Testing</label>
+                                        <input type="checkbox" id="pen_test" name="experience_3+[]" value="pen_test">
+                                </li>
+                                <li>
+                                    <label for="SIEM">SIEM (Splunk, QRadar)</label>
+                                        <input type="checkbox" id="SIEM" name="experience_3+[]" value="SIEM">
+                                </li>
+                                <li>
+                                    <label for="SOC">Security Operations Centre</label>
+                                        <input type="checkbox" id="SOC" name="experience_3+[]" value="SOC">
+                                </li>
+                                <li>
+                                    <label for="soft_dev">Software Development</label>
+                                        <input type="checkbox" id="Software Development" name="experience_3+[]" value="Software Development">
+                                </li>
+                                <li>
+                                    <label for="rev_eng">Reverse Engineering (OllyDbg, IDA Pro)</label>
+                                        <input type="checkbox" id="rev_eng" name="experience_3+[]" value="rev_eng">
+                                </li>
+                                <li>
+                                    <label for="risk_manage">Risk Management</label>
+                                        <input type="checkbox" id="risk_manage" name="experience_3+[]" value="risk_manage">
+                                </li>
+                                <li>
+                                    <label for="zero_trust">Zero-trust Architecture</label>
+                                        <input type="checkbox" id="zero_trust" name="experience_3+[]" value="zero_trust">
+                                </li>
+                    </section>
+                    <section class="skills_column" id="other">
+                        <h3>* Other Skills...</h3>
+                            <textarea name="other_skills" id="other_skills" rows="6" cols="40" pattern="[A-Za-z0-9\s,]{1,200}" placeholder="Please list any applicable skills here as concisely as possible."></textarea>
+                    </section>
+
+
             </fieldset>
              <!-- Buttons -->
             <section id="end_buttons">
