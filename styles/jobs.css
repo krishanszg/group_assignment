@@ -80,6 +80,22 @@ description: css for jobs.html in the web technology project.
     line-height: 100px
 }
 
+.overview {
+    border-style: hidden;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.requirements {
+    border-style: hidden;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
 ul {
     text-align: left;
     list-style-type: none;
@@ -102,9 +118,9 @@ summary {
     cursor: pointer;
 }
 
-summary::before {
-    content: "";
-    display: block;
+summary::before { /* ::before adds a pseudo-element allowing to style specific parts (in this case its the image replacing the default triangle)*/
+    content: ""; /* Allows content*/
+    display: block; /* make the pseudo-element act like a block level element (take up all available space) */
     width: 150px;
     height: 150px;
     background: url("../Images/more_info_new.png") no-repeat center center;
