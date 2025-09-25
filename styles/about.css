@@ -4,7 +4,7 @@ author: Sean Cummings
 
 created: 09/09/2025
 
-last modified: 09/09/2025
+last modified: 23/09/2025
 
 description: css applies to the about page. */
 
@@ -12,11 +12,7 @@ table, th, td {
     border: 0.1em solid #775253;
     border-radius: 0.2em;
     padding: 0.5rem;
-    text-align: center; /*all this makes the table look nice*/
-}
-
-caption {
-    text-decoration:underline
+    text-align: center; 
 }
 
 #about-us {
@@ -24,6 +20,7 @@ caption {
     font-size: 3rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    padding-left: 4rem;
 }
 
 th, #name{
@@ -32,46 +29,44 @@ th, #name{
 
 caption{
     font-size: x-large;
-}
-
-#members {
-    padding-left: 2.5%;
-
-}
-
-figure {
-    padding-left: 2.5%;
-}
-
-#about-us{
-    padding-left: 4rem;
-}
-
-#we-are-jarvisscript{
-    padding-left: 4rem;
+    text-decoration:underline;
 }
 
 caption, td{
     padding: 0.5rem;
 }
 
-div {
+span {
     float: right;
     padding-right: 2.5%;
 }
 
 figure{
-    float:left
+    float: left;
+    padding-left: 2.5%;
+}
+
+img{
+    border: solid #775253;
+    border-radius: 1em;
 }
 
 #facts {
     float:right;
-    padding-right:2.5%
-}
-
-footer {
-    clear:both
+    padding-right: 2.5%
 }
 
 #members{
-    border: 0.1em solid #775253;}
+    border: solid #775253;
+    border-radius: 1em;
+    padding-left: 2.5%;
+}
+
+dl{
+    padding-left: 1rem;
+    border: solid #775253;
+    border-radius: 1em;
+    width: 8.7rem;
+    text-align: left;
+    padding: 0.5rem;
+}
