@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="description" content="Apply for a job at Epstein Island Cybersecurity"/>
-    <meta name="keywords" content="Cybersecurity, Apply, Jobs, Recruiting, Careers"/>
-    <meta name="author" content="Krishan Gurdon"/>
+    <meta charset="UTF-8">
+    <meta name="description" content="Apply for a job at Epstein Island Cybersecurity">
+    <meta name="keywords" content="Cybersecurity, Apply, Jobs, Recruiting, Careers">
+    <meta name="author" content="Krishan Gurdon">
     <title>Apply - Epstein Island Cybersecurity</title>
     <!-- CSS Links -->
     <link rel="stylesheet" href="styles/apply.css">
@@ -44,7 +44,7 @@
             
             <!-- Personal Details -->
             <fieldset id="personal_fieldset">
-                <legend id="form_title">Your Personal Details</legend>
+                <legend class="form_title">Your Personal Details</legend>
                     <!-- Name Fields -->
                     <div class="input_row">
                         <label for="fname">First Name: </label>     <!-- First Name -->
@@ -64,7 +64,7 @@
                         <label for="male">Male</label>              <!-- Male -->
                             <input type="radio" name="gender" id="male" value="Male" required="required">
                     </div>
-                    <div class="input_row_gender"">
+                    <div class="input_row_gender">
                         <label for="female">Female</label>          <!-- Female -->
                             <input type="radio" name="gender" id="female" value="Female" required="required">
                     </div>
@@ -73,14 +73,14 @@
                             <input type="radio" name="gender" id="non_binary" value="Non_Binary" required="required">
                     </div>
                     <div class="input_row_gender">
-                        <label for="other">Other</label>            <!-- Other -->
-                            <input type="radio" name="gender" id="other" value="Other" required="required">
+                        <label for="other_gender">Other</label>            <!-- Other -->
+                            <input type="radio" name="gender" id="other_gender" value="Other" required="required">
                     </div>
             </fieldset>
 
             <!-- Address Fieldset -->
             <fieldset id="address_fieldset">
-                <legend id="form_title">Your Address Details</legend>
+                <legend class="form_title">Your Address Details</legend>
                     <div class="input_row">
                         <label for="street">Street Address: </label>                     <!-- Address -->
                             <input type="text" name="street" id="street" required="required" pattern="[A-Za-z0-9\s]{1,40}" placeholder="123 Street Rd">
@@ -111,7 +111,7 @@
 
              <!-- Contact Fieldset -->
             <fieldset id="contact_fieldset">
-                <legend id="form_title">Your Contact Details</legend>
+                <legend class="form_title">Your Contact Details</legend>
                     <div class="input_row">
                         <label for="email">Email Address: </label>          <!-- Email -->
                             <input type="email" name="email" id="email" required="required" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="youremail@email.com">
@@ -124,10 +124,10 @@
 
             <!-- Skills Fieldset -->
              <fieldset id="skills_fieldset">
-                <legend id="form_title">Your Skills</legend>
+                <legend class="form_title">Your Skills</legend>
                     <div class="input_row" id="jrn">
                         <label for="job">Job Reference Number: </label>     <!-- Job Reference Number -->
-                            <input type="text" name="job" id="job" required="required" pattern="[A-Z]{2}[0-9]{3}|[A-Z]{2}[0-9]{3}" placeholder="ABC01 / AB012">
+                            <input type="text" name="job" id="job" required="required" pattern="[A-Z]{2}[0-9]{3}|[A-Z]{2}[0-9]{3}" placeholder="ABC01 or AB012">
                     </div>
 
                     <!-- Certifiacte Checkboxes -->
@@ -182,6 +182,7 @@
                                     <label for="CEH">CEH</label>
                                         <input type="checkbox" id="CEH" name="certs[]" value="CEH">
                                 </li>
+                            </ul>
                     </section>
 
                     <!-- Experience between 1 to 2 years -->
@@ -189,45 +190,46 @@
                         <h3>* Experience (1 to 2 years):</h3>
                             <ul>
                                 <li>
-                                    <label for="cloud_comp">Cloud Computing (AWS and/or Azure)</label>
-                                        <input type="checkbox" id="cloud_comp" name="experience_1_2[]" value="cloud_comp">
+                                    <label for="cloud_comp_1_2">Cloud Computing (AWS and/or Azure)</label>
+                                        <input type="checkbox" id="cloud_comp_1_2" name="experience_1_2[]" value="cloud_comp">
                                 </li>
                                 <li>
-                                    <label for="info_sec">Information Security Analysis</label>
-                                        <input type="checkbox" id="info_sec" name="experience_1_2[]" value="info_sec">
+                                    <label for="info_sec_1_2">Information Security Analysis</label>
+                                        <input type="checkbox" id="info_sec_1_2" name="experience_1_2[]" value="info_sec">
                                 </li>
                                 <li>
-                                    <label for="mal_analysis">Malware Analysis</label>
-                                        <input type="checkbox" id="mal_analysis" name="experience_1_2[]" value="mal_analysis">
+                                    <label for="mal_analysis_1_2">Malware Analysis</label>
+                                        <input type="checkbox" id="mal_analysis_1_2" name="experience_1_2[]" value="mal_analysis">
                                 </li>
                                 <li>
-                                    <label for="pen_test">Penetration Testing</label>
-                                        <input type="checkbox" id="pen_test" name="experience_1_2[]" value="pen_test">
+                                    <label for="pen_test_1_2">Penetration Testing</label>
+                                        <input type="checkbox" id="pen_test_1_2" name="experience_1_2[]" value="pen_test">
                                 </li>
                                 <li>
-                                    <label for="SIEM">SIEM (Splunk, QRadar)</label>
-                                        <input type="checkbox" id="SIEM" name="experience_1_2[]" value="SIEM">
+                                    <label for="SIEM_1_2">SIEM (Splunk, QRadar)</label>
+                                        <input type="checkbox" id="SIEM_1_2" name="experience_1_2[]" value="SIEM">
                                 </li>
                                 <li>
-                                    <label for="SOC">Security Operations Centre</label>
-                                        <input type="checkbox" id="SOC" name="experience_1_2[]" value="SOC">
+                                    <label for="SOC_1_2">Security Operations Centre</label>
+                                        <input type="checkbox" id="SOC_1_2" name="experience_1_2[]" value="SOC">
                                 </li>
                                 <li>
-                                    <label for="soft_dev">Software Development</label>
-                                        <input type="checkbox" id="soft_dev" name="experience_1_2[]" value="soft_dev">
+                                    <label for="soft_dev_1_2">Software Development</label>
+                                        <input type="checkbox" id="soft_dev_1_2" name="experience_1_2[]" value="soft_dev">
                                 </li>
                                 <li>
-                                    <label for="rev_eng">Reverse Engineering (OllyDbg, IDA Pro)</label>
-                                        <input type="checkbox" id="rev_eng" name="experience_1_2[]" value="rev_eng">
+                                    <label for="rev_eng_1_2">Reverse Engineering (OllyDbg, IDA Pro)</label>
+                                        <input type="checkbox" id="rev_eng_1_2" name="experience_1_2[]" value="rev_eng">
                                 </li>
                                 <li>
-                                    <label for="risk_manage">Risk Management</label>
-                                        <input type="checkbox" id="risk_manage" name="experience_1_2[]" value="risk_manage">
+                                    <label for="risk_manage_1_2">Risk Management</label>
+                                        <input type="checkbox" id="risk_manage_1_2" name="experience_1_2[]" value="risk_manage">
                                 </li>
                                 <li>
-                                    <label for="zero_trust">Zero-trust Architecture</label>
-                                        <input type="checkbox" id="zero_trust" name="experience_1_2[]" value="zero_trust">
+                                    <label for="zero_trust_1_2">Zero-trust Architecture</label>
+                                        <input type="checkbox" id="zero_trust_1_2" name="experience_1_2[]" value="zero_trust">
                                 </li>
+                            </ul>
                     </section>
 
                     <!-- Experience 3 or more years -->
@@ -274,20 +276,21 @@
                                     <label for="zero_trust">Zero-trust Architecture</label>
                                         <input type="checkbox" id="zero_trust" name="experience_3+[]" value="zero_trust">
                                 </li>
+                            </ul>
                     </section>
 
                     <!-- Other skills text area -->
                     <section class="skills_column" id="other">
                         <h3>* Other Skills...</h3>
-                            <textarea name="other_skills" id="other_skills" rows="6" cols="40" pattern="[A-Za-z0-9\s,]{1,200}" placeholder="Please list any applicable skills here as concisely as possible."></textarea>
+                            <textarea name="other_skills" id="other_skills" rows="10" cols="40" placeholder="Please list any missing skills here as concisely as possible." style="resize: none;"></textarea>
                     </section>
             </fieldset>
 
              <!-- End Buttons -->
-            <section id="end_buttons">
+            <div id="end_buttons">
                 <input type="submit" value="Submit Application" class="end_button" id="submit_button">
                 <input type="reset" value="Reset Form" class="end_button" id="reset_button">
-            </section>
+            </div>
         </form>
     </main>
 <footer>

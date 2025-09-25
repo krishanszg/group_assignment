@@ -152,8 +152,8 @@ description: CSS styling specific to the apply page. This should not change much
         @media screen and (max-width: 650px) {      /* 650px width, remove form border and padding */
             #whole_form {                           /* Remove form padding and border */
                 border: none;
-                padding: none;
-                margin: none;
+                padding: 0;
+                margin: 0;
             }
             form {
                 justify-items: center;
@@ -182,7 +182,7 @@ description: CSS styling specific to the apply page. This should not change much
         margin-bottom: 1rem;
         
     }
-    #form_title {    /* Fieldset Titles */
+    .form_title {    /* Fieldset Titles */
         text-align: center;
         font-size: 2rem;
         padding-left: 2rem;
