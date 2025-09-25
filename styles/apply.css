@@ -6,157 +6,247 @@ author: Krishan Gurdon
 
 created: 09/09/2025
 
-last modified: 23/09/2025
+last modified: 25/09/2025
 
 description: CSS styling specific to the apply page. This should not change much, if any, universal styles from the universal.css file.
 
 */
 
-/* Page Header */
-h1 {
-    text-align: center;
-    font-size: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
+/* BORDER STYLING */
+    #whole_form {   /* Box Around Apply Form */
+        border: 4px solid #775253;
+        border-radius: 2rem;
+        margin: 2rem;
+        padding: 2rem;
+    }
+    fieldset {      /* Border around all fieldsets*/
+        border: 4px solid #775253;;
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        width: 45%;
+    }
 
-/* Below Header Page Description */
-.body_text {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-size: 1.25rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    
-}
+/* LAYOUT */
+    form {              /* Form grid settings */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        justify-items: stretch;
+        align-items: stretch;
+        column-gap: 1.5rem;
+    }
+    /* Fieldset grid alignment */
+        #personal_fieldset {
+            grid-column: 1;
+            grid-row: span 2;
+            justify-self: auto;
+            align-self: auto;
+            grid-area: span 2;
+            width: auto;
 
-#form_title {
-    text-align: center;
-    font-size: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
+            align-content: center;
+            justify-items: center;
+        }
+        #address_fieldset {
+            grid-column: 2;
+            grid-row: 1;
+            justify-self: auto;
+            align-self: auto;
+            width: auto;
 
-/* Box Around Apply Form */
-#whole_form {
-    border: 4px solid #775253;
-    border-radius: 2rem;
-    margin: 2rem;
-    padding: 2rem;
-}
+            align-items: center;
+            justify-items: center;
+        }
+        #contact_fieldset {
+            grid-column: 2;
+            grid-row: 2;
+            justify-self: auto;
+            align-self: auto;
+            width: auto;
 
-/* Universal Styling for Apply Fieldsets*/
-fieldset {
-    border: 4px solid #775253;;
-    border-radius: 2rem;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    width: 45%;
-}
+            align-items: center;
+            justify-items: center;
+        }
+        #skills_fieldset {
+            grid-column: span 2;
+            grid-row: 3;
+            width: auto;
 
-/* Dynamic Layout Settings */
-@media screen and (max-width: 1050px) {
-    fieldset {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+        }
+        #end_buttons {
+            grid-column: span 2;
+            grid-row: 4;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            column-gap: 1rem;
+            justify-items: right;
+        }
+    /* Content flex settings */
+        .input_row {
+            display: flex;
+            justify-content: right;
+            width: 375px;
+            padding: 0.35rem;
+        }
+        .input_row_gender {
+            display: flex;
+            justify-content: right;
+            width: 140px;
+            padding: 0.3rem;
+            margin-right: 80px;
+        }
+        #jrn {          /* Job Reference Number Layout Settings */
+            grid-row: 1;
+            grid-column: span 4;
+            width: max-content;
+            justify-self: center;
+        }
+        .skills_column {
+            grid-row: 2;
+        }
+    /* RESPONSIVE LAYOUT SETTINGS */
+        @media screen and (max-width: 1750px) {     /* 1750px width, skills column changes */
+            #skills_fieldset {
+                grid-template-columns: repeat(3, auto);
+            }
+            #other {
+                grid-row: 3;
+                grid-column: span 3;
+                justify-self: center;
+            }
+        }
+        @media screen and (max-width: 1425px) {     /* 1425px width, skills column changes */
+            #skills_fieldset {
+                grid-template-columns: repeat(2, auto);
+            }
+            .skills_column{
+                justify-self: center;
+            }
+            #other {
+                grid-row: 3;
+            }
+            #experience_1_2 {
+                grid-row: 3;
+            }
+        }
+        @media screen and (max-width: 1175px) {     /* 1175px width, skills column changes */
+            #other {
+                grid-row: 4;
+                grid-column: span 2;
+            }
+            #experience_1_2 {
+                grid-column: span 2;
+            }
+        }
+        @media screen and (max-width: 1045px) {     /* 1045px width, entire form changes from grid to block*/
+            form {
+                display: block;
+            }
+            #skills_fieldset {
+                display: block;
+            }
+        }
+        @media screen and (max-width: 650px) {      /* 650px width, remove form border and padding */
+            #whole_form {                           /* Remove form padding and border */
+                border: none;
+                padding: none;
+                margin: none;
+            }
+            form {
+                justify-items: center;
+            }
+        }
+
+/* TEXT FORMATTING */
+    h1 {            /* Page Header */
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    h2 {            /* Gender Heading Styling */
+    font-size: 1.5rem;
+    }
+    h3 {            /* Skill Column Headers */
+        font-size: 1.5rem;
+    }
+    .body_text {    /* Below Header Page Description */
+        display: block;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 1.25rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        
+    }
+    #form_title {    /* Fieldset Titles */
+        text-align: center;
+        font-size: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    label {         /* Input Label Styling */
+        font-size: 1.25rem;
+        padding: 0.25rem;
+    }
+
+/* INPUT STYLING */
+    input {         /* General input box styling */
+        border-radius: 0.5rem;
+        background-color: #e7f1b7;
+        color: #011627;
+        padding: 0.25rem;
+        width: 12rem;
+        margin-left: 15px;
+    }
+    select {        /* Dropdown box styling */
+        border-radius: 0.5rem;
+        background-color: #e7f1b7;
+        color: #011627;
+        padding: 0.25rem;
+        margin-left: 15px;
+        width: 12.6rem;
+    }
+    textarea {      /* Textarea box styling */
+        border-radius: 0.5rem;
+        background-color: #e7f1b7;
+        color: #011627;
+        padding: 0.25rem;
+    }
+    select:focus, input:focus, textarea:focus { /* White border when inputting */
+        border: #ffffff 2px solid;
+    }
+    input[type="radio"] {           /* Radio button scaling */
+        transform: scale(1.5);
         width: auto;
     }
-}
+    .end_button {                   /* Submit and Reset Button Settings */
+        border: 4px solid #775253;
+        padding: 1em;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #011627;
+        width: 100%;
+    }
+    .end_button:hover {
+        background-color: #775253;
+        color: #e7f1b7;
+        cursor: pointer;
+    }
+    li {                            /* Remove list item pullet-points */
+        list-style: none;
+        padding: 0.3rem;
+    }
+    input[type="checkbox"]{         /* Make checkbox the bullet-point of the list items */
+        float: left;
+        width: auto;
+        transform: scale(1.5);
+    }
 
-/* Input Label Styling */
-label {
-    font-size: 1.25rem;
-    padding: 0.25rem;
-    margin-left: 20%;
-}
 
-/* Actual Input Styling */
-input {
-    border-radius: 0.5rem;
-    background-color: #e7f1b7;
-    color: #011627;
-    padding: 0.25rem;
-    float: right;
-    width: 12rem;
-    margin-right: 20%;
-}
 
-select {
-    border-radius: 0.5rem;
-    background-color: #e7f1b7;
-    color: #011627;
-    padding: 0.25rem;
-    float: right;
-    margin-right: 20%;
-}
 
-textarea {
-    border-radius: 0.5rem;
-    background-color: #e7f1b7;
-    color: #011627;
-    padding: 0.25rem;
-}
 
-input[type="radio"] {
-    transform: scale(1.5);
-    clear: left;
-}
-
-/* White border when inputting */
-select:focus, input:focus, textarea:focus {
-    border: #ffffff 2px solid;
-}
-
-/* Gender Selection Label indenting */
-.gender_radio {
-    font-size: 1.2rem;
-    margin-left: 20%;
-    width: min-content;
-}
-
-/* Gender Heading Styling */
-h3 {
-    font-size: 1.5rem;
-    margin-left: 25%;
-}
-
-/* Submit and Reset Button Settings */
-grid {
-    display: grid;
-    width: auto;
-    gap: 10px;
-}
-
-.end_button {
-    border: 4px solid #775253;
-    padding: 1em;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #011627;
-    grid-row: 1;
-    width: 100%;
-}
-
-.end_button:hover {
-    background-color: #775253;
-    color: #e7f1b7;
-    cursor: pointer;
-}
-
-/* Page Layout Formatting */
-
-#personal_fieldset {
-    float: left;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-#address_fieldset {
-    float: right;
-}
-
-#contact_fieldset {
-    float: right;
-}
-
-#skills_fieldset {
-    width: 96.5%;
-}
