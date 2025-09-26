@@ -268,7 +268,7 @@ Then, the first and third box are offset using margin-left and margin-right.*/
     align-items: center; /* makes both banners centred even despite their differing heights */
 
     /* Background aesthetics */
-    background-image: url('../images/epstein-mug-shot.jpg');
+    background-image: url('../images/epstein_mug_shot.jpg');
     background-size: 150px 50px;
     background-repeat:repeat;
     background-color: #010f1bbc;
