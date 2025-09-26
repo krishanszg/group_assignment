@@ -44,7 +44,7 @@ hr{
     
     /* Background aesthetics: the image, the size (cover means that it'll scale to fit instead of like tiling,)
     and positioned in the centre. */
-    background-image: url('../images/Little_St_James_Island_Cropped.jpg');
+    background-image: url('../Images/Little_St_James_Island_Cropped.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -268,7 +268,7 @@ Then, the first and third box are offset using margin-left and margin-right.*/
     align-items: center; /* makes both banners centred even despite their differing heights */
 
     /* Background aesthetics */
-    background-image: url('../images/epstein_mug_shot.jpg');
+    background-image: url('../Images/epstein_mug_shot.jpg');
     background-size: 150px 50px;
     background-repeat:repeat;
     background-color: #010f1bbc;
