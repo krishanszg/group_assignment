@@ -107,6 +107,13 @@ footer p{
     padding-left: 2rem;
     color:#bdc696;
 }
+footer a{
+    padding-left: 2rem;
+    color:#bdc696;
+}
+footer a:hover{
+    color:#ffffff;
+}
 
 #epstein-link {
     text-decoration: none;
