@@ -172,6 +172,7 @@ description: CSS styling specific to the apply page. This should not change much
     }
     h3 {            /* Skill Column Headers */
         font-size: 1.5rem;
+        margin-left: 35px;
     }
     .body_text {    /* Below Header Page Description */
         display: block;
