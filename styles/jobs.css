@@ -1,3 +1,17 @@
+/*
+
+filename: jobs.css
+
+author: Redmond Anthony-Harvey-Beavis
+
+created: 11/09/2025
+
+last modified: 26/09/2025
+
+description: css for the jobs page 
+
+*/
+
 .container {
     display: grid;
     grid-template-columns: 1fr; /* single column now */
